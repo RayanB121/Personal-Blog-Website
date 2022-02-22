@@ -1,0 +1,33 @@
+@import url(layout.css);
+@import url(cards.css);
+.body-container {
+	grid-template-areas: "header header header " ". main-container ." "footer footer footer"
+}
+@media (max-width:600px) {
+	.body-container {
+		display: grid;
+		height: 150vh;
+		grid-template-columns: auto 1fr auto;
+		grid-template-rows: auto 1fr auto;
+		grid-template-areas: "header . ." "main-container . ." "footer . ."
+	}
+	.header-list {
+		display: flex;
+		list-style: none;
+		flex-direction: column
+	}
+	.header-item:first-child {
+		margin-right: 0;
+		margin-left: 0
+	}
+}
+main {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+	padding: 50px 25px 25px 25px;
+	grid-template-rows: auto 1fr auto;
+	column-gap: 500px;
+	row-gap: 5.4rem;
+	justify-content: center;
+	justify-items: center;
+}
