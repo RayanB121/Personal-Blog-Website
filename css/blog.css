@@ -15,7 +15,10 @@ main {
 	width: 67rem;
 }
 .blog-image {
-	width: 800px;
+	width: 50%;
+}
+.caption{
+	font-size: smaller;
 }
 main article {
 	font-family: 'Roboto', sans-serif;
